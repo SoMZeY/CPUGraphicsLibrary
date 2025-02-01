@@ -1,5 +1,17 @@
 #pragma once
-typedef int color_t; // TODO: Change that in the future!!!
+#include <sys/types.h>
+#include <sys/select.h>
+
+// Not sure if i can use null library so i just gonna define this here
+#ifndef NULL
+#define NULL ((void*)0)
+#endif
+
+// Unsigned short is 16 bits same as color
+typedef unsigned short color_t;
+
+// Some bit masking and shifitng for the RGB
+#define RGB(r, g, b) (((r & 0x1F) << 11) | ((g & 0x3F) << 5) | (b & 0x1F))
 
 // Graphics functions
 void init_graphics();
