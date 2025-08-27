@@ -42,3 +42,6 @@ sudo ./myprogram
 * Designed around **Tiny Core Linux** console; **no Wayland/X** support.
 * If your framebuffer is 24/32-bpp, colors/pixels will be wrong (current code packs RGB565).
 * Restores terminal settings on exit.
+
+## License
+This project is licensed under the [MIT License](./LICENSE).
